@@ -1,0 +1,52 @@
+/* styles.css (or your preferred stylesheet) */
+.small-image {
+  max-width: 300px; /* Adjust the maximum width as needed */
+  max-height: 450px; /* Adjust the maximum height as needed */
+        
+  /* You can also add other styling as required */
+}
+.top-series-image {
+  max-width: 200px; /* Adjust the maximum width as needed */
+  max-height: 350px; /* Adjust the maximum height as needed */
+        
+  /* You can also add other styling as required */
+}
+
+
+/* App.css */
+
+
+
+.carousel {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 3s ease-in-out; 
+  animation: slideImage 10s linear infinite; /* Add a keyframe animation for continuous sliding */
+}
+
+.carousel-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 10px 0 10px;
+}
+
+@keyframes slideImage {
+  0%, 100% {
+    transform: translateX(0%);
+  }
+  25% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-100%); /* Slide out to the left */
+  }
+  75% {
+    transform: translateX(-100%); /* Slide out to the left */
+  }
+}
